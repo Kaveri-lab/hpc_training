@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
         for (i = 1; i < nprocs; ++i)
         {
-            MPI_Recv(&nloops, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_>
+            MPI_Recv(&nloops, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             total_nloops += nloops;
         }
 
@@ -52,11 +52,12 @@ int main(int argc, char *argv[])
             ++nloops;
         }
         printf("Process 0 received total_nloops = %d\n", total_nloops);
-        printf("Process 0 performed the remaining %d iterations of the loop>
+        printf("Process 0 performed the remaining %d iterations of the loop\n",
                nloops);
 
     }
 
     MPI_Finalize();
     return 0;
+
 }
