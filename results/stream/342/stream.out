@@ -1,0 +1,27 @@
+=======================================================
+  STREAM Job Report
+=======================================================
+  Job ID         : 342
+  Threads        : 1
+  Phase          : run
+  Binary Status  : ✔ Already Built
+  Build Status   : ✔ SUCCESS
+  Log            : /home/kaveripk/Caribou/results/stream/342/run.out
+───────────────────────────────────────────────────────
+  Iteration 1 (threads=1)
+  Kernel         Bandwidth (MB/s)
+  ────────────────────────────────
+  Copy                   38148.50
+  Scale                  19242.90
+  Add                    22234.10
+  Triad                  22199.60
+  ────────────────────────────────
+  Iteration 2 (threads=1)
+  Kernel         Bandwidth (MB/s)
+  ────────────────────────────────
+  Copy                   37808.30
+  Scale                  19234.30
+  Add                    22367.50
+  Triad                  22108.10
+  ────────────────────────────────
+=======================================================

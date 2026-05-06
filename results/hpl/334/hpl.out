@@ -1,0 +1,33 @@
+=======================================================
+  HPL Result Summary
+=======================================================
+  Job ID         : 334
+  Compiler       : INTEL
+  Phase          : run
+  Binary Status  : ✔ Already Built
+  Build Status   : ✔ SUCCESS
+  Log            : /home/kaveripk/Caribou/results/hpl/334/run.out
+───────────────────────────────────────────────────────
+  Iteration 1 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               21.8400
+  gflops            125.0800
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 2 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               26.5600
+  gflops            102.8100
+  status            ✔ PASSED
+  ───────────────────────────
+=======================================================

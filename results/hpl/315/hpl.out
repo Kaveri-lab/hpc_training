@@ -1,0 +1,99 @@
+=======================================================
+  HPL Result Summary
+=======================================================
+  Job ID         : 315
+  Compiler       : INTEL
+  Phase          : run
+  Binary Status  : ✔ Already Built
+  Build Status   : ✔ SUCCESS
+  Log            : /home/kaveripk/Caribou/results/hpl/315/run.out
+───────────────────────────────────────────────────────
+  Iteration 1 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               24.8700
+  gflops            109.8100
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 2 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               30.2200
+  gflops             90.3620
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 1 (threads=2)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               29.5800
+  gflops             92.3370
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 2 (threads=2)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               29.8000
+  gflops             91.6560
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 1 (threads=4)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               30.2400
+  gflops             90.3220
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 2 (threads=4)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               30.7100
+  gflops             88.9300
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 1 (threads=8)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               33.3000
+  gflops             82.0190
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 2 (threads=8)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     128
+  P                        2
+  Q                        2
+  time               32.5200
+  gflops             83.9680
+  status            ✔ PASSED
+  ───────────────────────────
+=======================================================

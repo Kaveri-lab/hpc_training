@@ -1,0 +1,69 @@
+name: HPL Benchmark
+type: mpi
+
+# binary locations per compiler
+binaries:
+  intel: /home/kaveripk/hpl-2.3/bin/intel/xhpl
+  aocc:  /home/kaveripk/hpl-2.3/bin/aocc/xhpl
+
+# source directory and download
+src_dir: /home/kaveripk/hpl-2.3
+src_url: https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz
+src_tarball: /home/kaveripk/hpl-2.3.tar.gz
+
+# makefile paths per compiler
+makefiles:
+  intel: /home/kaveripk/hpl-2.3/Make.intel
+  aocc:  /home/kaveripk/hpl-2.3/Make.aocc
+
+# HPL input file per compiler
+dat:
+  intel: /home/kaveripk/hpl-2.3/bin/intel/HPL.dat
+  aocc:  /home/kaveripk/hpl-2.3/bin/aocc/HPL.dat
+
+# compiler settings
+# patch_makefile.py reads these and updates Make.<compiler> before building
+compilers:
+  default: intel
+
+  intel:
+    module:  intel/oneapi
+    mpi_run: /opt/intel/oneapi/mpi/2021.17/bin/mpirun
+    topdir:  /home/kaveripk/hpl-2.3           # line 70 Make.intel TOPdir
+    mpi_dir: /opt/intel/oneapi/mpi/2021.17    # line 84 Make.intel MPdir
+    mpi_lib: "-L/opt/intel/oneapi/mpi/2021.17/lib -lmpi"  # line 87 MPlib
+    blas_dir: /opt/intel/oneapi/mkl/2025.3    # line 96 LAdir
+    blas_lib: "-L/opt/intel/oneapi/mkl/2025.3/lib -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl"  # line 98 LAlib
+    cc:      icx                               # line 170 CC
+    ccflags: "-O3 -w -ansi-alias -Wall"        # line 173 CCFLAGS
+    linker:  icx                               # line 178 LINKER
+
+  aocc:
+    module:  aocc/4.2
+    mpi_run: /opt/intel/oneapi/mpi/2021.17/bin/mpirun
+    topdir:  /home/kaveripk/hpl-2.3
+    mpi_dir: /opt/intel/oneapi/mpi/2021.17
+    mpi_lib: "-L/opt/intel/oneapi/mpi/2021.17/lib -lmpi"
+    blas_dir: /opt/AMD/aocl/aocl-linux-aocc-4.2.0/aocc
+    blas_lib: "-L/opt/AMD/aocl/aocl-linux-aocc-4.2.0/aocc/lib_LP64 -lblis-mt -lpthread -lm"
+    cc:      /home/kaveripk/aocc-compiler-4.2.0/bin/clang
+    ccflags: "-O3 -march=native -ffast-math -Wall -ffp-model=precise"
+    linker:  /home/kaveripk/aocc-compiler-4.2.0/bin/clang
+
+# slurm job settings
+slurm:
+  ntasks: 4
+  cpus_per_task: 2
+  time: "00:30:00"
+
+# how many times to run the benchmark
+iterations: 2
+
+# run benchmark with each of these thread counts
+threads: [1, 2, 4, 8]
+
+# hpl tuning
+nb: 128
+
+# results folder
+results: results/hpl

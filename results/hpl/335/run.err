@@ -1,0 +1,4 @@
+srun: forcing job termination
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 335.0 ON DESKTOP-O1R3PVH CANCELLED AT 2026-04-26T11:13:31 ***

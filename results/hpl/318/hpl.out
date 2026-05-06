@@ -1,0 +1,33 @@
+=======================================================
+  HPL Result Summary
+=======================================================
+  Job ID         : 318
+  Compiler       : AOCC
+  Phase          : run
+  Binary Status  : ✔ Already Built
+  Build Status   : ✔ SUCCESS
+  Log            : /home/kaveripk/Caribou/results/hpl/318/run.out
+───────────────────────────────────────────────────────
+  Iteration 1 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     192
+  P                        2
+  Q                        2
+  time               25.7200
+  gflops            106.1900
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 2 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     192
+  P                        2
+  Q                        2
+  time               28.9600
+  gflops             94.3040
+  status            ✔ PASSED
+  ───────────────────────────
+=======================================================

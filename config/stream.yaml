@@ -1,0 +1,31 @@
+name: STREAM Benchmark
+type: openmp
+
+# binary location - if missing, build from source
+binary: /home/kaveripk/stream/stream_omp
+
+# source file
+src: /home/kaveripk/stream/stream.c
+src_url: https://www.cs.virginia.edu/stream/FTP/Code/stream.c
+
+# build settings
+build:
+  cc: /usr/bin/gcc
+  flags: -O3 -fopenmp -march=native
+  array_size: 80000000
+  module: intel/oneapi
+
+# slurm job settings
+slurm:
+  ntasks: 1
+  cpus_per_task: 4
+  time: "00:10:00"
+
+# how many times to run the benchmark
+iterations: 2
+
+# run benchmark with each of these thread counts
+threads: [1, 2, 4, 8]
+
+# results folder
+results: results/stream

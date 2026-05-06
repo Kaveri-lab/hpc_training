@@ -1,0 +1,33 @@
+=======================================================
+  HPL Result Summary
+=======================================================
+  Job ID         : 337
+  Compiler       : AOCC
+  Phase          : run
+  Binary Status  : ✔ Already Built
+  Build Status   : ✔ SUCCESS
+  Log            : /home/kaveripk/Caribou/results/hpl/337/run.out
+───────────────────────────────────────────────────────
+  Iteration 1 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     192
+  P                        2
+  Q                        2
+  time               23.2200
+  gflops            117.6200
+  status            ✔ PASSED
+  ───────────────────────────
+  Iteration 2 (threads=1)
+  Metric               Value
+  ───────────────────────────
+  N                    16000
+  NB                     192
+  P                        2
+  Q                        2
+  time               27.0300
+  gflops            101.0200
+  status            ✔ PASSED
+  ───────────────────────────
+=======================================================
