@@ -1,3 +1,4 @@
+//This program computes the sum and average of N numbers in parallel using MPI
 #include <stdio.h>
 #include <stdlib.h>
 #include <mpi.h>
