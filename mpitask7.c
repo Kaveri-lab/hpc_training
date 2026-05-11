@@ -1,3 +1,4 @@
+//This program does parallel vector addition of two 8-element arrays using 4 MPI processes.
 #include <stdio.h>
 #include <mpi.h>
 
