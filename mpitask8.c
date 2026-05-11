@@ -1,3 +1,4 @@
+//program computes the sum of a 4×4 matrix using 4 MPI processes, where each process handles one row.
 #include <stdio.h>
 #include <mpi.h>
 
